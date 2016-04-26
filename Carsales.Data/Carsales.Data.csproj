@@ -53,6 +53,7 @@
     <Compile Include="DbConnections\CarSalesDb.cs" />
     <Compile Include="Enquiry.cs" />
     <Compile Include="ICarSalesDataSource.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
