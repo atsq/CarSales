@@ -9,6 +9,11 @@ namespace Carsales.Data.DbConnections
 {
     public class CarSalesDb : DbContext, ICarSalesDataSource
     {
+        public CarSalesDb() : base("CarSalesDbConnection")
+        {
+
+        }
+
         public DbSet<Car> Cars { get; set; }
         public DbSet<Enquiry> Enquiries { get; set; }
  

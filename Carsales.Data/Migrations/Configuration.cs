@@ -14,7 +14,7 @@ namespace Carsales.Data.Migrations
 
         protected override void Seed(Carsales.Data.DbConnections.CarSalesDb context)
         {
-            context.Cars.AddOrUpdate(c => c,
+            context.Cars.AddOrUpdate(
                 new Car[]
                 {
                     new Car()
