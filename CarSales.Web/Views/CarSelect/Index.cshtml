@@ -1,0 +1,25 @@
+﻿@using Carsales.Data
+@model System.Collections.Generic.List<Car>
+
+<div class="list-group car-selection row">
+    @{
+        foreach (Car car in Model)
+        {
+            <a href="@Url.Action("Details", "CarSelect", new { id = car.Id })" class="list-group-item car-option">
+                <div class="col-sm-5">
+                    <span>@car.Make</span>
+                    <span>@car.Model</span>
+                </div>
+
+                <div class="col-sm-1">
+                    <span>@car.Year</span>
+                </div>
+
+                <div class="col-sm-1">
+                    <span>@car.DapPrice</span>
+                </div>
+            </a>
+        }
+    }
+</div>
+

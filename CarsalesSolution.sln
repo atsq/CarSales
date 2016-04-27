@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarSales.Web", "CarSales.We
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarSales.Web.Tests", "CarSales.Web.Tests\CarSales.Web.Tests.csproj", "{D647AC16-9052-48F8-8442-8AB6B67E757E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarSales.Biz", "CarSales.Biz\CarSales.Biz.csproj", "{673DF983-B798-411C-A36B-807B524FA859}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarSales.Repository", "CarSales.Repository\CarSales.Repository.csproj", "{8E83EDFC-9E19-42D3-96CB-9DAD0743F965}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{D647AC16-9052-48F8-8442-8AB6B67E757E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D647AC16-9052-48F8-8442-8AB6B67E757E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D647AC16-9052-48F8-8442-8AB6B67E757E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{673DF983-B798-411C-A36B-807B524FA859}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{673DF983-B798-411C-A36B-807B524FA859}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{673DF983-B798-411C-A36B-807B524FA859}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{673DF983-B798-411C-A36B-807B524FA859}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E83EDFC-9E19-42D3-96CB-9DAD0743F965}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E83EDFC-9E19-42D3-96CB-9DAD0743F965}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E83EDFC-9E19-42D3-96CB-9DAD0743F965}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E83EDFC-9E19-42D3-96CB-9DAD0743F965}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

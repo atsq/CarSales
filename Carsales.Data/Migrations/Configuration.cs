@@ -14,6 +14,7 @@ namespace Carsales.Data.Migrations
 
         protected override void Seed(Carsales.Data.DbConnections.CarSalesDb context)
         {
+            // Test that initial seeding works on another PC otherwise refactor out the guts of this method and call from here (and from web/biz if need be). 
             context.Cars.AddOrUpdate(
                 new Car[]
                 {
