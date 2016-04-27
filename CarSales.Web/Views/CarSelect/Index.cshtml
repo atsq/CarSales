@@ -5,7 +5,7 @@
     @{
         foreach (Car car in Model)
         {
-            <a href="@Url.Action("Details", "CarSelect", new { id = car.Id })" class="list-group-item car-option">
+            <a href="@Url.Action("EnquiryForm", "Enquiry", new { carId = car.Id })" class="list-group-item car-option">
                 <div class="col-sm-5">
                     <span>@car.Make</span>
                     <span>@car.Model</span>

@@ -50,7 +50,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CarRespository.cs" />
+    <Compile Include="EnquiryRepository.cs" />
     <Compile Include="ICarRepository.cs" />
+    <Compile Include="IEnquiryRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

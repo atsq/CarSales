@@ -10,7 +10,7 @@ using Carsales.Data.DbConnections;
 
 namespace CarSales.Repository
 {
-    public class CarRespository
+    public class CarRespository : ICarRepository
     {
         //public class Car
         //{

@@ -1,0 +1,158 @@
+﻿@model Carsales.Data.Enquiry
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Car</h4>
+    <hr />
+    <div class="container2">
+        <div class="flex1">
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Car.Make)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Car.Make)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Car.Model)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Car.Model)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Car.Year)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Car.Year)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Car.PriceType)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Car.PriceType)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Car.EgcPrice)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Car.EgcPrice)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Car.DapPrice)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Car.DapPrice)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Car.Email)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Car.Email)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Car.ContactName)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Car.ContactName)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Car.Phone)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Car.Phone)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Car.DealerAbn)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Car.DealerAbn)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Car.Comments)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Car.Comments)
+                </dd>
+
+            </dl>
+        </div>
+        <div class="flex2">
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-horizontal">
+                    <h4>EnquiryModel</h4>
+                    <hr />
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                   <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <input type="submit" value="Create" class="btn btn-default" />
+                        </div>
+                    </div>
+                </div>
+            }
+            @*<div>
+        <span>Name: </span><input/>
+    </div>
+    <br/>
+    <div>
+        <span>Email: </span><input/>
+    </div>
+    <br/>
+    <button>
+        <span>Submit Enquiry</span>
+        @Html.ActionLink("Submit Enquiry", "Edit", new { id = model.Car.Id });
+            </button>
+        </div>*@
+    </div>
+
+    <div>
+        @*<p>
+            @Html.ActionLink("Edit", "Edit", new { id = model.Car.Id }) |
+            @Html.ActionLink("Back to List", "Index")
+        </p>*@
+    </div>
+</div>
